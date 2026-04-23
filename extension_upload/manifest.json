@@ -2,10 +2,9 @@
   "manifest_version": 3,
   "name": "Search With ChatGPT",
   "version": "1.0.0",
-  "description": "Añade la opción 'Buscar en ChatGPT' al menú contextual al seleccionar texto.",
+  "description": "Añade la opción 'Buscar con ChatGPT' al menú contextual al seleccionar texto.",
   "permissions": [
-    "contextMenus",
-    "tabs"
+    "contextMenus"
   ],
   "background": {
     "service_worker": "background.js"

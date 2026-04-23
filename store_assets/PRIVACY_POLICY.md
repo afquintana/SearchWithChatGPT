@@ -1,28 +1,33 @@
-# Privacy Policy
+# Privacy Policy – Search With ChatGPT
 
-**Search With ChatGPT** no recopila, almacena ni comparte datos personales.
+**Effective date:** 2026-04-23
 
-## Qué hace la extensión
-La extensión únicamente añade una opción al menú contextual de Chrome:
-**“Buscar en ChatGPT”**.
+Search With ChatGPT does **not** collect, store, share, or sell personal information.
 
-Cuando el usuario selecciona un texto y pulsa esa opción, la extensión:
-1. toma el texto seleccionado;
-2. codifica la búsqueda en la URL;
-3. abre una nueva pestaña en ChatGPT.
+## What this extension does
 
-## Datos tratados
-La extensión **no**:
-- recopila historiales de navegación;
-- almacena búsquedas en servidores propios;
-- usa cookies propias;
-- envía datos a bases de datos o APIs del desarrollador;
-- vende ni comparte datos con terceros.
+This extension adds one context menu option (**"Buscar con ChatGPT"**) when the user selects text on a webpage.
+When clicked, the extension opens a new tab to ChatGPT including the selected text as a query parameter.
 
-## Permisos usados
-- `contextMenus`: para añadir la opción al menú contextual.
-- `tabs`: para abrir una nueva pestaña con ChatGPT.
+## Data handling
 
-## Contacto
-Sustituye este texto por tu correo antes de publicar:
-`mail@afquintana.com`
+- No analytics
+- No tracking
+- No remote database
+- No user authentication
+- No cookies set by the extension
+
+Selected text is handled locally by the extension only to build the URL opened in the browser.
+
+## Permissions used
+
+- `contextMenus`: to create the context menu option when text is selected.
+
+## Third-party services
+
+When the user clicks the context menu option, a ChatGPT page is opened (`chatgpt.com`).
+Any interaction with that site is governed by OpenAI's own terms and privacy policy.
+
+## Contact
+
+For support, please contact: **your-email@example.com**
