@@ -11,8 +11,8 @@ Extensión de Chrome (Manifest V3) que añade una opción al menú contextual pa
 
 ## Estructura del proyecto
 
-- `extension_upload/` — Código de la extensión (`manifest.json`, `background.js`, iconos).
-- `store_assets/` — Recursos para publicación en Chrome Web Store.
+- Raíz del proyecto — Código de la extensión (`manifest.json`, `background.js`, iconos).
+- `store_assets/` — Recursos para publicación en Chrome Web Store (no necesarios para cargar la extensión).
 
 ## Permisos mínimos
 
@@ -24,7 +24,7 @@ Extensión de Chrome (Manifest V3) que añade una opción al menú contextual pa
 
 1. Ve a `chrome://extensions`.
 2. Activa **Developer mode**.
-3. Pulsa **Load unpacked** y selecciona la carpeta `extension_upload/`.
+3. Pulsa **Load unpacked** y selecciona la carpeta raíz del proyecto.
 4. Verifica en la tarjeta de la extensión que no hay errores.
 5. Abre cualquier web, selecciona texto y haz clic derecho.
 6. Comprueba que aparece **Buscar con ChatGPT**.
