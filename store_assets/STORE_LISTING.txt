@@ -1,37 +1,24 @@
-NAME
+# Chrome Web Store Listing Draft
+
+## Name
 Search With ChatGPT
 
-SHORT DESCRIPTION
-Añade “Buscar en ChatGPT” al menú contextual al seleccionar texto en Chrome.
+## Short description
+Search selected text instantly with ChatGPT from the right-click menu.
 
-LONG DESCRIPTION
-Search With ChatGPT te permite seleccionar texto en cualquier página web, hacer clic derecho y abrir una nueva pestaña con la búsqueda en ChatGPT.
+## Detailed description
+Search With ChatGPT adds a simple context menu action to Chrome.
 
-Funciones:
-- Añade una opción simple al menú contextual.
-- Funciona al seleccionar texto en cualquier web.
-- Abre ChatGPT en una pestaña nueva con la consulta ya preparada.
-- Sin registros, sin cuenta propia y sin backend del desarrollador.
+How it works:
+1) Select text on any webpage.
+2) Right-click and choose "Buscar con ChatGPT".
+3) A new tab opens in ChatGPT with your selected text.
 
-Ideal para:
-- estudiar,
-- resumir textos,
-- pedir explicaciones,
-- traducir contenido,
-- investigar rápidamente desde el navegador.
+This extension is lightweight and focused on one thing: faster access to ChatGPT from selected text.
 
-PERMISSIONS JUSTIFICATION
+## Privacy
+This extension does not collect or store personal data.
+
+## Permissions justification
 contextMenus:
-Se usa solo para mostrar la opción “Buscar en ChatGPT” cuando el usuario selecciona texto.
-
-tabs:
-Se usa solo para abrir una nueva pestaña con la URL de ChatGPT y la consulta codificada.
-
-PRIVACY DISCLOSURE SUGGESTION
-- Esta extensión no vende datos.
-- Esta extensión no transfiere datos a terceros, excepto lo necesario para la función principal al abrir ChatGPT.
-- Esta extensión no usa datos para fines ajenos a la funcionalidad descrita.
-- Esta extensión no recopila ni almacena datos personales del usuario en servidores del desarrollador.
-
-CATEGORY SUGGESTION
-Productivity
+Used to create the right-click context menu option when text is selected.

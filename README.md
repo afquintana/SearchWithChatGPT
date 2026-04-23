@@ -1,43 +1,35 @@
 # Search With ChatGPT
 
-A lightweight Chrome extension that adds a **"Search with ChatGPT"** option to the context menu when you select text on any webpage.
+Extensión de Chrome (Manifest V3) que añade una opción al menú contextual para enviar texto seleccionado a ChatGPT.
 
-## Features
+## Comportamiento real
 
-- Adds a simple right-click menu action for selected text.
-- Works on any website where text can be selected.
-- Opens ChatGPT in a new tab with the selected text pre-filled as a query.
-- No custom backend, no user accounts, and no local data collection.
+1. Selecciona cualquier texto en una página web.
+2. Haz clic derecho sobre la selección.
+3. Aparece la opción **"Buscar con ChatGPT"** (solo en contexto de selección).
+4. Al pulsarla, se abre una nueva pestaña en `https://chatgpt.com/?q=...` con el texto seleccionado codificado en la URL.
 
-## How It Works
+## Estructura del proyecto
 
-1. Select text on a webpage.
-2. Right-click and choose **Search with ChatGPT**.
-3. A new tab opens with ChatGPT and your selected text included in the URL query.
+- `extension_upload/` — Código de la extensión (`manifest.json`, `background.js`, iconos).
+- `store_assets/` — Recursos para publicación en Chrome Web Store.
 
-## Project Structure
+## Permisos mínimos
 
-- `extension_upload/` — Chrome extension source files (`manifest.json`, background service worker, and icons).
-- `store_assets/` — Store listing assets, screenshots, and privacy policy documents.
+- `contextMenus` — Necesario para crear y gestionar la opción del menú contextual.
 
-## Installation (Developer Mode)
+> Esta versión no solicita `tabs` porque no es imprescindible para el comportamiento implementado.
 
-1. Open Chrome and go to `chrome://extensions`.
-2. Enable **Developer mode**.
-3. Click **Load unpacked**.
-4. Select the `extension_upload/` folder from this repository.
+## How to test locally
 
-## Permissions
-
-- `contextMenus` — Used only to add the context menu item.
-- `tabs` — Used only to open a new ChatGPT tab with the encoded query.
+1. Ve a `chrome://extensions`.
+2. Activa **Developer mode**.
+3. Pulsa **Load unpacked** y selecciona la carpeta `extension_upload/`.
+4. Verifica en la tarjeta de la extensión que no hay errores.
+5. Abre cualquier web, selecciona texto y haz clic derecho.
+6. Comprueba que aparece **Buscar con ChatGPT**.
+7. Haz clic en la opción y confirma que se abre ChatGPT con el texto en el parámetro `q`.
 
 ## Privacy
 
-This extension does not collect, store, or sell personal data. It only processes selected text locally to build the ChatGPT URL.
-
-For full details, see: `store_assets/PRIVACY_POLICY.md`.
-
-## Version
-
-Current extension version: **1.0.0**.
+La extensión no recoge ni almacena datos personales. Solo usa localmente el texto seleccionado para construir la URL que se abre en ChatGPT.
